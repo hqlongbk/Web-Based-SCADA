@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"><!--LINK thư viện onl cho web -->
+    <title>Form login</title>
+</head>
+
+<body>
+    <div id="wrapper"> <!-- khối hcn đăng nhập -->
+        <h1 id="not"></h1>
+        <form method="post" action="SQL.php" id="form-login"><!-- action trỏ tới file SQL.php  -->
+            <h1 class="form-heading">Đăng Nhập</h1>
+            <div class="form-group">
+                <i class="fa fa-user"></i><!-- hiển thị hình con người user -->
+                <input type="text" class="form-input" name="username" placeholder="Tên đăng nhập">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-key"></i>
+                <input type="password" class="form-input" name="password" placeholder="Mật khẩu">
+                <div id="eye"><!-- hiểN thị con mắt ẩn pass-->
+                    <i class="far fa-eye"></i>
+                </div>
+            </div>
+            <input type="submit" name="btn_submit" value="Login" class="form-submit">
+        </form>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!--mặc định để dùng js-->
+<script src="./JS/app.js"></script>
+<script src="./JS/SQL.js"></script>
+</html>

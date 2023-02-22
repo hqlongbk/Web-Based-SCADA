@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Formart.css">
+    <link rel="stylesheet" href="../CSS/BTN.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!--đây là phần thêm mới dùng cho lấy giá trị cài đặt thời gian-->
+    <title>Dashboard management center</title>
+    
+</head>
+
+<body>
+    <input type="checkbox" class="click" name="" id="cVXRL1" onclick="ShowVXRL1()">
+    <input type="checkbox" class="click" name="" id="cVIN1" onclick="ShowVIN1()">
+    <input type="checkbox" class="click" name="" id="cVXK1" onclick="ShowVXK1()">
+    <input type="checkbox" class="click" name="" id="cVRL1" onclick="ShowVRL1()">
+    <input type="checkbox" class="click" name="" id="cVOUT1" onclick="ShowVOUT1()">
+    <input type="checkbox" class="click" name="" id="cPUMP2" onclick="ShowPUMP1()">
+    <!-----------------------------------TEST1---------------------------------->
+    <input type="checkbox" class="click" name="" id="cBL1" onclick="ShowBL1()">
+    <div class="header">
+        <h2><br>HỆ THỐNG SCADA TRẠM CẤP NƯỚC SƠN TRÀ 1 </h2>
+    </div>
+    <div class="Main_board">
+        <div class="Mainboard_backg">
+            <!--<div class="ds_Over">
+                <div class="Tittle"></div>
+            </div>-->
+            <div id="form_infor1">
+                <p id="V_B1" class="vl_index">0.0</p>
+                <p class="vl_unit">M</p>
+            </div>
+            
+            <label for="cVXRL1" class="click_me"><img id="VXRL1" src="../Image/ValveOff.png" alt="" srcset=""></label>
+            <label for="cVIN1" class="click_me"><img id="VIN1" src="../Image/ValveOff.png" alt="" srcset=""></label>
+            <label for="cVXK1" class="click_me"><img id="VXK1" src="../Image/ValveOff.png" alt="" srcset=""></label>
+            <label for="cVRL1" class="click_me"><img id="VRL1" src="../Image/ValveOff.png" alt="" srcset=""></label>
+            <label for="cVOUT1" class="click_me"><img id="VOUT1" src="../Image/ValveOff.png" alt="" srcset=""></label>
+            <label for="cPUMP2" class="click_me"><img id="PUMP2" src="../Image/POff.png" alt="" srcset=""></label>
+            <!------------------CLICK VÀO HÌNH SẼ RA POP-UP BỂ LỌC--------------------------------->
+            <label for="cBL1" class="click_me"><img id="BL1" src="../Image/BL1.png" alt="" srcset=""></label>
+            <!-------------------------------------------------------------------------------------->
+            <!--Bể thu nước sạch-->
+            <div id="form_infor2">
+                <p id="V_B2" class="vl_index">0.0</p>
+                <p class="vl_unit">M</p>
+            </div>
+            <!--bể nước thô đầu vào -->
+            <div id="form_infor3">
+                <p id="V_VIN" class="vl_index">0.0</p>
+                <p class="vl_unit">M</p>
+            </div>
+            <!--bể 2 -->
+            <div id="form_infor4">
+                <p id="V_VOUT" class="vl_index">0.0</p>
+                <p class="vl_unit">M</p>
+            </div>
+            <!--bể lắng -->
+            <div id="form_infor5">
+                <p id="V_Lang" class="vl_index">3.99</p>
+                <p class="vl_unit">M</p>
+            </div>
+            <!--bể PAC 1 -->
+            <div id="form_infor6">
+                <p id="PAC_1" class="vl_index">3.0</p>
+                <p class="vl_unit">M</p>
+            </div>
+            <!--bể PAC 2 -->
+            <div id="form_infor7">
+                <p id="PAC_2" class="vl_index">3.0</p>
+                <p class="vl_unit">M</p>
+            </div>
+            <!--bể CLO 1 -->
+            <div id="form_infor8">
+                <p id="CLO_1" class="vl_index">3.0</p>
+                <p class="vl_unit">M</p>
+            </div>
+            <!--bể CLO 2 -->
+            <div id="form_infor9">
+                <p id="CLO_2" class="vl_index">3.0</p>
+                <p class="vl_unit">M</p>
+            </div>
+        
+
+            <!----------------------POP-UP BẢNG ĐIỀU KHIỂN------------------------------>
+            
+                
+            <!----------------------------------Click vào bể lọc----------------------------------------------------->
+            <div class ="box2" id="bBL1">
+                <div class="bangtabledk2">
+                    <table border="1" width="327" height="145" cellpadding="0" cellspacing="0">
+                        <tr class="trtable"><td></td>
+                            <th>Thời gian</th>
+                            <th>Hiện Tại</th>
+                            <th>Tích Luỹ</th>
+                        </tr>   
+                        <tr><th rowspan="2">Bể 1</th>
+                            <th>Lọc</th>
+                            <td>
+                                <p id="TLHT" class="vl_index2">0.0</p>
+                            </td>
+                            <td>
+                                <p id="TLTL" class="vl_index3">0.0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <th>Rửa Lọc</th>
+                            <td>
+                                <p id="TRLHT" class="vl_index2">0.0</p>
+                            </td>
+                            <td>
+                                <p id="TRLTL" class="vl_index3">0.0</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>   
+                
+                        <!----------------------POP-UP BẢNG ĐIỀU KHIỂN BỂ LỌC------------------------------>
+            <div class="boxdk2" id="bDK2">
+                <div class ="clsbtn"><span>BẢNG ĐIỀU KHIỂN</span></div>
+                <div class="state3">
+                    <input type="button" value="TỰ ĐỘNG" class="Aubtn" id="AUTO" onclick="AUTO()">
+                    <input type="button" value="BẰNG TAY" class="Manbtn" id="MANUAL" onclick="MANUAL()">
+                </div>
+                <div class="state2">
+                    <div class="state_button">
+                        <input type="button" value="CHẠY" class="Rundkbtn" id="RUNDK" onclick="RUNDK()">
+                        <input type="button" value="DỪNG" class="Stopdkbtn" id="STOPDK" onclick="STOPDK()">
+                    </div>
+                    <div class="state_loc">
+                        <div class="state_button">
+                        <input type="button" value="CHỈ CHẠY LỌC" class="ChayLoc" id="LOC" onclick="LOC()">
+                        <input type="button" value="CHỈ CHẠY RỬA LỌC" class="ChayRuaLoc" id="RUALOC" onclick="RUALOC()">
+                        </div>
+                    </div>
+                    <div class="state_button">
+                        <input type="button" value="XOÁ LỖI" class="Xoaloibtn" id="XOALOI" onclick="XOALOI()">
+                    </div>
+                    <div class="state_button">
+                        <input type="button" value="XÁC NHẬN" class="Xacnhan" id="XACNHAN" onclick="XACNHAN()">
+                    </div>                   
+                    <!-------------------------trạng thái hoạt động của bể lọc --------------------------------------------------------->
+                    <div id="form_infor10">
+                        <p class="vl_index0">Trạng thái:</p>
+                        <p id="TRANGTHAI" class="vl_index00">Đang rửa lọc</p>
+                    </div>
+                </div>
+            </div>
+            <!----------thời gian thực-------------->
+            <div class="boxdk4">
+                <div class ="clsbtn"><span>BẢNG HIỂN THỊ THỜI GIAN THỰC</span></div>
+                <input type="button" value="CÀI ĐẶT LỌC" class="Caidatloc" id="CAIDATLOC" onclick="CAIDATLOC()">
+                <input type="button" value="CÀI ĐẶT RỬA LỌC" class="Caidatrualoc" id="CAIDATRUALOC" onclick="CAIDATRUALOC()">
+                <p class="vl_index5">Đèn lỗi hệ thống</p>
+                    <div class="lamp_run2" id="LOIHT"></div>
+            </div>
+            
+            <!-----------CÀI THỜI GIAN LÀM VIỆC------------->
+            <div class="boxdk3" id="bDK3">
+                <div class ="clsbtn"><span>CÀI ĐẶT THỜI GIAN LÀM VIỆC</span></div>
+                    <div class="bangthoigian">
+                        <table border="1" width="453" height="144" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <th>Thời gian</th>
+                                <th>Cài đặt</th>
+                                <th>Hiện tại</th>
+                                <th>Thời gian</th>
+                                <th>Cài đặt</th>
+                                <th>Hiện tại</th>
+                            </tr>
+                            <tr>
+                                <th>TL_1(s)</th>
+                                <td>
+                                    <div class="timesetup">
+                                        <input class="nhapgiatri" type="text" id="HTTL1" value="" onchange="themgiatri()">
+                                        <div class="giatrihientai" id="result">00</div>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <th>TRL_1(s)</th>
+                                <td>
+                                    <div class="timesetup">
+                                        <input class="nhapgiatri" type="text" id="HTTL2" value="" onchange="themgiatri2()">
+                                        <div class="giatrihientai" id="result2">00</div>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>TRL_4(s)</th>
+                                <td>
+                                    <div class="timesetup">
+                                        <input class="nhapgiatri" type="text" id="HTRL1" value="" onchange="themgiatri5()">
+                                        <div class="giatrihientai" id="result5">00</div>
+                                    </div> 
+                                </td>
+                                <td></td>
+                                <th>TRL_2(s)</th>
+                                <td>
+                                    <div class="timesetup">
+                                        <input class="nhapgiatri" type="text" id="HTTL3" value="" onchange="themgiatri3()">
+                                        <div class="giatrihientai" id="result3">00</div>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>TL_3(s)</th>
+                                <td></td>
+                                <td></td>
+                                <th>TRL_3(s)</th>
+                                <td>
+                                    <div class="timesetup">
+                                        <input class="nhapgiatri" type="text" id="HTTL4" value="" onchange="themgiatri4()">
+                                        <div class="giatrihientai" id="result4">00</div>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+            </div>
+            <!----
+            <label for="cVXRL1" class="click_me"><img id="VXRL1" src="../Image/ValveOff.png" alt="" srcset=""></label>
+            <label for="cVIN1" class="click_me"><img id="VIN1" src="../Image/ValveOff.png" alt="" srcset=""></label>
+            <label for="cVXK1" class="click_me"><img id="VXK1" src="../Image/ValveOff.png" alt="" srcset=""></label>
+            <label for="cVRL1" class="click_me"><img id="VRL1" src="../Image/ValveOff.png" alt="" srcset=""></label>
+            <label for="cVOUT1" class="click_me"><img id="VOUT1" src="../Image/ValveOff.png" alt="" srcset=""></label>
+            <label for="cPUMP2" class="click_me"><img id="PUMP2" src="../Image/POff.png" alt="" srcset=""></label>
+            ---------->  
+            <!-------------------ĐÂY LÀ HIỂN THỊ CÁC VAN ĐỂ NHẤN LÊN------------------------------------------>                       
+            </div>
+            <!------------------------------------------------------------------------------------------------------->
+            
+            <!--------------------------------------CÀI ĐẶT THỜI GIAN CHO LỌC VÀ RỬA LỌC------------------------------------------>
+
+            <!------------------------------------------------------------------------------------------------------->
+
+            <!--POPup1-->
+            <div class="box" id="bVXRL1">
+                <div class="clsbtn"><span>VXRL1</span><input type="button" class="btncls" onclick="Hiden()"></div>
+                <div class="state2"> 
+                    <div>
+                        <p class="vl_index6">Chạy</p>
+                        <div class="lamp_green" id="LRVXRL1"></div>
+                        <p class="vl_index8">Dừng</p>
+                        <div class="lamp_red" id="LSVXRL1"></div>
+                        <p class="vl_index7">Lỗi</p>
+                        <div class="lamp_yellow" id="LEVXRL1"></div>
+                    </div>
+                </div>
+                <div class="active">
+                    <table class="tblabel">
+                        <tr>
+                            <td><input type="button" value="CHẠY" class="Runbtn" id="RUNVXRL1" onclick="RUNVXRL1()"></td>
+                            <td><input type="button" value="DỪNG" class="Stopbtn" id="STOPVXRL1" onclick="STOPVXRL1()"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><input type="button" value="XÓA LỖI" class="Xoaloipopup" id="DEVXRL1" onclick="DEVXRL1()"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--////////////////////////////////////////////////////////////////////////-->
+            <!--POPup2-->
+            <div class="box" id="bVIN1">
+                <div class="clsbtn"><span>VIN1</span><input type="button" class="btncls" onclick="Hiden()"></div>
+                <div class="state2">
+                    <div class="state_lamp1">
+                        <div>
+                            <p class="vl_index6">Chạy</p>
+                            <div class="lamp_green" id="LRVIN1"></div>
+                            <p class="vl_index8">Dừng</p>
+                            <div class="lamp_red" id="LSVIN1"></div>
+                            <p class="vl_index7">Lỗi</p>
+                            <div class="lamp_yellow" id="LEVIN1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="active">
+                    <table class="tblabel">
+                        <tr>
+                            <td><input type="button" value="CHẠY" class="Runbtn" id="RUNVIN1" onclick="RUNVIN1()"></td>
+                            <td><input type="button" value="DỪNG" class="Stopbtn" id="STOPVIN1" onclick="STOPVIN1()"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><input type="button" value="XÓA LỖI" class="Xoaloipopup" id="DEVIN1" onclick="DEVIN1()"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--////////////////////////////////////////////////////////////////////////-->
+            <!--POPup3-->
+            <div class="box" id="bVXK1">
+                <div class="clsbtn"><span>VXK1</span><input type="button" class="btncls" onclick="Hiden()"></div>
+                <div class="state2">
+                    <div class="state_lamp1">
+                        <div>
+                            <p class="vl_index6">Chạy</p>
+                            <div class="lamp_green" id="LRVXK1"></div>
+                            <p class="vl_index8">Dừng</p>
+                            <div class="lamp_red" id="LSVXK1"></div>
+                            <p class="vl_index7">Lỗi</p>
+                            <div class="lamp_yellow" id="LEVXK1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="active">
+                    <table class="tblabel">
+                        <tr>
+                            <td><input type="button" value="CHẠY" class="Runbtn" id="RUNVXK1" onclick="RUNVXK1()"></td>
+                            <td><input type="button" value="DỪNG" class="Stopbtn" id="STOPVXK1" onclick="STOPVXK1()"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><input type="button" value="XÓA LỖI" class="Xoaloipopup" id="DEVXK1" onclick="DEVXK1()"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--////////////////////////////////////////////////////////////////////////-->
+            <!--POPup4-->
+            <div class="box" id="bVRL1">
+                <div class="clsbtn"><span>VRL1</span><input type="button" class="btncls" onclick="Hiden()"></div>
+                <div class="state2">
+                    <div class="state_lamp1">
+                        <div>
+                            <p class="vl_index6">Chạy</p>
+                            <div class="lamp_green" id="LRVRL1"></div>
+                            <p class="vl_index8">Dừng</p>
+                            <div class="lamp_red" id="LSVRL1"></div>
+                            <p class="vl_index7">Lỗi</p>
+                            <div class="lamp_yellow" id="LEVRL1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="active">
+                    <table class="tblabel">
+                        <tr>
+                            <td><input type="button" value="CHẠY" class="Runbtn" id="RUNVRL1" onclick="RUNVRL1()"></td>
+                            <td><input type="button" value="DỪNG" class="Stopbtn" id="STOPVRL1" onclick="STOPVRL1()"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><input type="button" value="XÓA LỖI" class="Xoaloipopup" id="DEVXRL1" onclick="DEVRL1()"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--POPup5-->
+            <div class="box" id="bVOUT1">
+                <div class="clsbtn"><span>VOUT1</span><input type="button" class="btncls" onclick="Hiden()"></div>
+                <div class="state2">
+                    <div class="state_lamp1">
+                        <div>
+                            <p class="vl_index6">Chạy</p>
+                            <div class="lamp_green" id="LRVOUT1"></div>
+                            <p class="vl_index8">Dừng</p>
+                            <div class="lamp_red" id="LSVOUT1"></div>
+                            <p class="vl_index7">Lỗi</p>
+                            <div class="lamp_yellow" id="LEVOUT1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="active">
+                    <table class="tblabel">
+                        <tr>
+                            <td><input type="button" value="CHẠY" class="Runbtn" id="RUNVOUT1" onclick="RUNVOUT1()"></td>
+                            <td><input type="button" value="DỪNG" class="Stopbtn" id="STOPVOUT1" onclick="STOPVOUT1()"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><input type="button" value="XÓA LỖI" class="Xoaloipopup" id="DEVOUT1" onclick="DEVOUT1()"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--////////////////////////////////////////////////////////////////////////-->
+            <!--POPup6-->
+            <div class="box" id="bPUMP2">
+                <div class="clsbtn"><span>PUMP2</span><input type="button" class="btncls" onclick="Hiden()"></div>
+                <div class="state2">
+                    <div class="state_lamp1">
+                        <div>
+                            <p class="vl_index6">Chạy</p>
+                            <div class="lamp_green" id="LRPUMP2"></div>
+                            <p class="vl_index8">Dừng</p>
+                            <div class="lamp_red" id="LSPUMP2"></div>
+                            <p class="vl_index7">Lỗi</p>
+                            <div class="lamp_yellow" id="LEPUMP2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="active"> 
+                    <table class="tblabel">
+                        <tr>
+                            <td><input type="button" value="CHẠY" class="Runbtn" id="RUNPUMP2" onclick="RUNPUMP2()"></td>
+                            <td><input type="button" value="DỪNG" class="Stopbtn" id="STOPPUMP2" onclick="STOPPUMP2()"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><input type="button" value="XÓA LỖI" class="Xoaloipopup" id="DEPUMP2" onclick="DEPUMP2()"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--////////////////////////////////////////////////////////////////////////-->
+        
+        </div>
+    </div>
+<script type="text/javascript">
+    function themgiatri(){
+        var input_text = document.getElementById("HTTL1");
+        var result = document.getElementById("result");
+        var text = input_text.value;
+        result.innerHTML = text;
+    }
+</script>
+<!--////////////////////////////////////////////////////////////////////////-->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<!--////////////////////////////////////////////////////////////////////////-->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script> <!-- thư viện của JS và kết nối MQTT -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../JS/MQTT_File.js"></script>
+<script src="../JS/PopUp.js"></script>
+<!--đây là phần thêm mới dùng cho giá trị cài đặt thời gian-->
+
+
+</html>

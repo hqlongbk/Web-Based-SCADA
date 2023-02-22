@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(to right, #033950 20%, #04405a 35%);;
+    min-width: 100vh;
+    min-height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+.header h2{
+    text-align: center;
+    color: #00ff00;
+    margin-top: -17px;
+}
+
+hr{
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+}
+.Main_board{
+    min-width: none;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.Main_board .Mainboard_backg{
+    margin-top: 0px;
+    background-image: url("../Image/DS.png") ;/* HIỂN THỊ GIAO DIỆN PDF LÊN WEB*/
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 1486px;
+    height: 697px;
+}
+/*--------------------------BẢNG POP-UP BỂ LỌC 1---------------------------------*/
+.Main_board2{
+    width: 500px;
+    height: 263px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+/*-------------------------------------------------------------------------------*/
+.Main_board .ds_Over{
+    width: 100%;
+    height: 164px;
+    background: #fff;
+    display: inline-flex;
+}
+.ds_Over .Tittle{
+    width: 50%;
+    height: 164px;
+    background: linear-gradient(to top, rgb(2, 45, 50) 0%, rgba(2,0,36,1) 20%, rgb(4, 99, 110) 80%);
+}
+.ds_Over .Ds_btn{
+    width: 50%;
+    margin-left: 10px;
+    height: 164px;
+}
+.Main_board .ds_control{
+    margin-left: 10px;
+    width: 50%;
+    height: 164px;
+}
+/*BỂ 1*/
+.Main_board #VOUT1{
+    position: absolute;
+    right: 508px;
+    margin-top: 107px;
+    height: 33px;
+    width: 26px;
+}
+.Main_board #VXRL1{
+    position: absolute;
+    right: 724px;
+    margin-top: 100px;
+    height: 33px;
+    width: 26px;
+}
+/*--------------------------------------cài kích thước cho pop up bể lọc 1--------------------------------*/
+.Main_board #BL1{
+    position: absolute;
+    right: 568px;
+    margin-top: 107px;
+    height: 119px;
+    width: 149px;
+}
+/*--------------------------------------------------------------------------*/
+.Main_board #VIN1{
+    position: absolute;
+    right: 721px;
+    margin-top: 70px;
+    height: 32px;
+    width: 27px;
+}
+.Main_board #VXK1{
+    position: absolute;
+    right: 551px;
+    margin-top: 59px;
+    height: 33px;
+    width: 26px;
+}
+.Main_board #VRL1{
+    position: absolute;
+    right: 508px;
+    margin-top: 151px;
+    height: 33px;
+    width: 26px;
+}
+/*BỂ 2*/
+.Main_board #VOUT2{
+    position: absolute;
+    right: 508px;
+    margin-top: 309px;
+    height: 33px;
+    width: 26px;
+}
+.Main_board #VXRL2{
+    position: absolute;
+    right: 724px;
+    margin-top: 301px;
+    height: 33px;
+    width: 26px;
+}
+.Main_board #VIN2{
+    position: absolute;
+    right: 721px;
+    margin-top: 271px;
+    height: 33px;
+    width: 26px;
+}
+.Main_board #VXK2{
+    position: absolute;
+    right: 551px;
+    margin-top: 260px;
+    height: 33px;
+    width: 26px;
+}
+.Main_board #VRL2{
+    position: absolute;
+    right: 508px;
+    margin-top: 352px;
+    height: 33px;
+    width: 26px;
+}
+.Main_board #PUMP2{
+    position: absolute;
+    right: 352px;
+    margin-top: 370px;
+    height: 30px;
+    width: 46px;
+}
+/*--------------------------------------------------------------------*/
+
+/*------------------------BẢNG POP-UP HIỂN THỊ CÁC VAN--------------------------*/
+.Main_board2 #VXRL1{
+    position: absolute;
+    right: 872px;
+    margin-top: 94px;
+    height: 40px;
+    width: 32px;
+}
+.Main_board2 #VIN1{
+    position: absolute;
+    right: 868px;
+    margin-top: 55px;
+    height: 40px;
+    width: 32px;
+}
+.Main_board2 #VXK1{
+    position: absolute;
+    right: 651px;
+    margin-top: 41px;
+    height: 40px;
+    width: 32px;
+}
+.Main_board2 #VOUT1{
+    position: absolute;
+    right: 614px;
+    margin-top: 138px;
+    height: 40px;
+    width: 32px;
+}
+.Main_board2 #VRL1{
+    position: absolute;
+    right: 614px;
+    margin-top: 193px;
+    height: 40px;
+    width: 32px;
+}
+.Main_board2 #PUMP2{
+    position: absolute;
+    right: 525px;
+    margin-top: 215px;
+    height: 39px;
+    width: 59px;
+}
+
+/*--------------------------------------------------------------------*/
+#form_infor1{
+    right: 616px;
+    position: absolute;
+    display: inline-flex;
+    margin-top: 88px;
+    margin-left: 10px;
+    width: 71px;
+    height: 19px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+/* bể thu nước sạch*/
+#form_infor2{
+    right: 212px;
+    position: absolute;
+    display: inline-flex;
+    margin-top: 275px;
+    margin-left: 10px;
+    width: 71px;
+    height: 19px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+/*bể nước thô*/
+#form_infor3{
+    right: 1360px;
+    position: absolute;
+    display: inline-flex;
+    margin-top: 69px;
+    margin-left: 52px;
+    width: 71px;
+    height: 19px;   
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+/*bể 2*/
+#form_infor4{
+    right: 616px;
+    position: absolute;
+    display: inline-flex;
+    margin-top: 289px;
+    margin-left: 10px;
+    width: 71px;
+    height: 19px;   
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+/*bể lắng*/
+#form_infor5{
+    right: 849px;
+    position: absolute;
+    display: inline-flex;
+    margin-top: 59px;
+    margin-left: 10px;
+    width: 71px;
+    height: 19px;   
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+/*bể lắng*/
+#form_infor6{
+    right: 844px;
+    position: absolute;
+    display: inline-flex;
+    margin-top: 336px;
+    margin-left: 10px;
+    width: 64px;
+    height: 18px;   
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+/*bể lắng*/
+#form_infor7{
+    right: 844px;
+    position: absolute;
+    display: inline-flex;
+    margin-top: 450px;
+    margin-left: 10px;
+    width: 64px;
+    height: 18px;   
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+/*BỂ CLO 1*/
+#form_infor8{
+    right: 109px;
+    position: absolute;
+    display: inline-flex;
+    margin-top: 84px;
+    margin-left: 10px;
+    width: 71px;
+    height: 19px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+/*BỂ CLO 2*/
+#form_infor9{
+    right: 109px;
+    position: absolute;
+    display: inline-flex;
+    margin-top: 222px;
+    margin-left: 10px;
+    width: 71px;
+    height: 19px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+/* trạng thái hoạt động của bể lọc////////////////////////////////////////////////////*/
+#form_infor10{
+    right: 1px;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 10px;
+    width: 128px;
+    height: 21px;
+    border: 0px solid black;
+    color: rgb(8, 87, 148);
+    font-weight: bold;
+    font-size: 0.46cm;
+}
+
+.vl_unit{
+    position: absolute;
+    right: 5px;
+}
+.vl_index{
+    position: absolute; /* tuyệt đối(ko thay đổi) or tương đối(so với đối tượng mẹ)*/
+    left: 14px;
+}
+.vl_index00{
+    position: absolute; /* tuyệt đối(ko thay đổi) or tương đối(so với đối tượng mẹ)*/
+    left: 7px;
+}
+/*---------------đây là chữ: trạng thái*/
+.vl_index0{
+    color:rgb(0, 0, 0);
+    position: absolute; /* tuyệt đối(ko thay đổi) or tương đối(so với đối tượng mẹ)*/
+    left: -89px;
+}
+
+
+/* hiện giá trị của table*/
+.vl_index2{
+    position: absolute; /* tuyệt đối(ko thay đổi) or tương đối(so với đối tượng mẹ)*/
+    left: 164px;
+    margin-top: -10px;
+    margin-left: 102px;
+    font-weight: bold;
+    font-size: 0.46cm;
+}
+.vl_index3{
+    position: absolute; /* tuyệt đối(ko thay đổi) or tương đối(so với đối tượng mẹ)*/
+    left: 164px;
+    margin-top: -10px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 0.46cm;
+}
+/*--------------đây là giá trị của thời gian lọc hiệN tại*/
+.vl_index4{
+    position: absolute; /* tuyệt đối(ko thay đổi) or tương đối(so với đối tượng mẹ)*/
+    left: 170px;
+    margin-top: -10px;
+    margin-left: 95px;
+    font-weight: bold;
+    font-size: 0.46cm;
+}
+.vl_index5{
+    position: absolute; /* tuyệt đối(ko thay đổi) or tương đối(so với đối tượng mẹ)*/
+    margin-top: 102px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 0.46cm;
+    color:black;
+    text-align: center;
+}
+.vl_index6{
+    color:rgb(0, 0, 0);
+    position: absolute; /* tuyệt đối(ko thay đổi) or tương đối(so với đối tượng mẹ)*/
+    left: 41px;
+    margin-top: 25px;
+    font-size: 0.5cm;
+    font-weight: bold;
+}
+.vl_index7{
+    color:rgb(0, 0, 0);
+    position: absolute; /* tuyệt đối(ko thay đổi) or tương đối(so với đối tượng mẹ)*/
+    left: 251px;
+    margin-top: 25px;
+    font-size: 0.5cm;
+    font-weight: bold;
+}
+.vl_index8{
+    color:rgb(0, 0, 0);
+    position: absolute; /* tuyệt đối(ko thay đổi) or tương đối(so với đối tượng mẹ)*/
+    left: 141px;
+    margin-top: 25px;
+    font-size: 0.5cm;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------------*/
+
+#wrapper{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-login{
+    margin-top: -230px;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.8);
+    flex-grow: 1;
+    padding: 35px 26px 25px;
+    box-shadow: 0px 0px 17px 3px rgb(255 255 255 / 80%);
+    margin-right: -341px;
+}
+.form-heading{
+    font-size: 25px;
+    color: #f5f5f5;
+    text-align: center;
+    margin: 30px;
+}
+.form-group{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    display: flex;
+}
+.form-group i{
+    color: #fff;
+    font-size: 14px;
+    padding-right: 10px;
+}
+.form-input{
+    background: transparent;
+    border: 0;
+    outline: 0;  
+    color: #f5f5f5;
+    flex-grow: 1;
+}
+#eye i{
+    padding-right: 0;
+    cursor: pointer;
+}
+.form-input::placeholder{
+    color: #c9c0c0;
+}
+.form-submit{
+    background: transparent;
+    border: 2px solid #0fcfe9;
+    color: rgba(15, 179, 230, 0.8);
+    width: 100%;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: 0.25 ease-in-out;
+}
+.form-submit:hover{
+    border:1px solid #f0d808;
+}
