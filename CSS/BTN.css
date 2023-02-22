@@ -1,0 +1,673 @@
+.btn_B{
+    display: inline-flex;
+    margin-top: 7px;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to top, rgb(2, 45, 50) 0%, rgba(2,0,36,1) 20%, rgb(4, 99, 110) 80%);
+}
+.btn_B .btn_Val{
+    margin-left: 20px;
+    height: 100%;
+    width: 125px;
+}
+.btn_Val .label{
+    margin-top: 8px;
+    color: #00ff00;
+    text-align: center;
+}
+.switch h1{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.switch{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 125px;
+    height: 40px;
+}
+.switch input{
+    visibility: hidden;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    align-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffb83d;
+    box-shadow: -5px -5px 8px rgba(255, 255, 255, 0.2)
+                5px 5px 8px rgba(0,0, 0, 0.2);
+    border-radius: 50px;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+input:checked + .slider{
+    background: #ff2442;
+}
+input:checked + .slider::before{
+    transform: translateX(85px);
+}
+.slider .round{
+    border-radius: 50px;
+}
+.slider .round:before{
+    border-radius: 50px;
+}
+.box{
+    right: 8px;
+    margin-top: -2px;
+    position: absolute;
+    width: 330px;
+    height: 230px;
+    border: solid 2px black;
+    background-color: rgb(235, 233, 233);
+    visibility: hidden;
+    z-index: 2;
+}
+/*--------------box cho pop up bể lọc 1*-----------------------*/
+.box2{
+    right: 39px;
+    margin-top: 500px;
+    position: absolute;
+    width: 1407px;
+    height: 177px;
+    border: solid 2px black;
+    background-color: rgb(235, 233, 233);
+    visibility: hidden;
+    z-index: 2;
+
+}
+/*----------------------------------------------------------------*/
+.box .clsbtn{
+    width: 100%;
+    display: inline-flex;
+    border-bottom: solid 0.5px black;
+    background-color: #1566df;
+    color: #fff;
+    font-size: 0.6cm;
+}
+/*----------------KÍCH THƯỚC TIÊU ĐỀ BỂ LỌC 1----------------------*/
+.box2 .clsbtn{
+    margin-top: -1px;
+    background-color: #b7bdc0;
+    border-bottom: solid 1px black;
+    color: #fff;
+    font-size: 0.6cm;
+    height: 29px;
+}
+.boxdk2 .clsbtn{
+    margin-top: -5px;
+    background-color: #1566df;
+    border-bottom: solid 1px black;
+    color: #fff;
+    font-size: 0.6cm;
+    height: 29px;
+}
+.boxdk3 .clsbtn{
+    margin-top: -5px;
+    background-color: #1566df;
+    border-bottom: solid 1px black;
+    color: #fff;
+    font-size: 0.6cm;
+    height: 29px;
+}
+.boxdk4 .clsbtn{
+    margin-top: -5px;
+    background-color: #1566df;
+    border-bottom: solid 1px black;
+    color: #fff;
+    font-size: 0.6cm;
+    height: 29px;
+}
+
+.boxdk .clsbtn{
+    width: 317px;
+    margin-left: -1px;
+    margin-top: -1px;
+    display: inline-flex;
+    border-bottom: solid 1px black;
+    background-color: #1566df;
+    color: #fff;
+}
+.clsbtn span{
+    width: 95%;
+    margin-top: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.box .btncls{
+    background-image: url("../Image/close_box_red.png");
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    justify-items: end;
+    margin-left: -15px;
+}
+/*-------------------nút tắt bể lọc 1------------------------------------*/
+.box2 .btncls{
+    background-image: url("../Image/close_box_red.png");
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    justify-items: end;
+    margin-left: 834px;
+    margin-top: 3px;
+}
+.state{
+    display: inline-flex;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.state2{
+    display: inline-flex;
+    border-bottom: 0px solid black;
+    width: 100%;
+}
+.state3{
+    display: inline-flex;
+    border-bottom: 0px solid black;
+    width: 100%;
+    position: absolute;
+}
+.state_button{
+    width: 35%;
+    color: #fff;
+}
+.Aubtn{
+    margin-left: 287px;
+    margin-top: 49px;
+    width: 103px;
+    height: 35px;
+    font-weight: bolder;
+    background-color: #396912;
+    font-size: 0.45cm;
+    color: #fff;
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s;
+    position: absolute;
+}
+.Aubtn:hover{
+    color: black;
+    background-color:#00ff00;
+}
+
+.Manbtn{
+    margin-left: 287px;
+    margin-top: 10px;
+    width: 103px;
+    height: 30px;
+    font-weight: bolder;
+    background-color: rgb(147, 23, 23);
+    font-size: 0.45cm;
+    color: #fff;
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s;
+    position: absolute;
+}
+.Manbtn:hover{
+    color: black;
+    background-color:#ff2442;
+}
+
+/* ----------------BẢNG ĐIỀU KHIỂN ------------------------------------------------------------------------------*/
+/* box bảng điều khiển*/
+.boxdk {
+    right: 1163px;
+    margin-top: 222px;
+    position: absolute;
+    width: 320px;
+    height: 284px;
+    border: solid 2px black;
+    background-color: rgb(235, 233, 233);
+
+}
+/*NÚT RUN Ở BẢNG ĐIỀU KHIỂN*/
+.Rundkbtn{
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 94px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 0.45cm;
+    background-color: rgb(153, 234, 87);
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s; 
+}
+.Rundkbtn:hover{
+    color:#fff;
+    background-color:#00ff00;
+}
+/*NÚT DỪNG Ở BẢNG ĐIỀU KHIỂN*/
+.Stopdkbtn{
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 94px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 0.45cm;
+    background-color: rgb(238, 81, 81);
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s;   
+}
+.Stopdkbtn:hover{
+    color:#fff;
+    background-color:#f40d0d;
+}
+/*NÚT XOÁ LỖI*/
+.Xoaloibtn{
+    margin-left: -28px;
+    margin-top: 87px;
+    width: 80px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 0.45cm;
+    background-color: rgb(235, 227, 11);
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s; 
+    position: absolute; 
+}
+.Xoaloibtn:hover{
+    color:rgb(255, 255, 255);
+    background-color:rgb(244, 237, 37);
+}
+/*NÚT CHỈ CHẠY LỌC*/
+.ChayLoc{
+    margin-left: -28px;
+    margin-top: 50px;
+    width: 168px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 0.4cm;
+    background-color: rgb(91, 190, 217);
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s;
+    position: absolute;  
+}
+.ChayLoc:hover{
+    color:#fff;
+    background-color:rgb(17, 110, 249);;
+}
+/*NÚT CHỈ CHẠY RỬA LỌC*/
+.ChayRuaLoc{
+    margin-left: -28px;
+    margin-top: 10px;
+    width: 168px;
+    height: 30px;
+    font-size: 0.4cm;
+    font-weight: bolder;
+    background-color: rgb(91, 190, 217);
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s;
+    position: absolute;
+}
+.ChayRuaLoc:hover{
+    color:#fff;
+    background-color:rgb(17, 110, 249);;
+}
+.lamp_run2{
+    margin-left: 22px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #fff;
+}
+.lamp_run3{
+    margin-left: 15px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #fff;
+}
+.lamp_run4{
+    margin-left: -212px;
+    margin-top: 84px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #fff;
+}
+.state_loc .tblabel{
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.trangthai span{
+    width: 100px;
+    margin-top: 80px;
+    margin-left: -190px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.bangtabledk{
+    margin-left: -318px;
+    margin-top: 120px;
+    width: 351px;
+    height: 133px;
+    z-index: 2;   
+}
+.bangthoigian{
+    width: 100px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* ----------------BẢNG ĐIỀU KHIỂN POP -UP BỂ LỌC1 ------------------------------------------------------------------------------*/
+.boxdk2 {
+    right: 991px;
+    margin-top: 0px;
+    position: absolute;
+    width: 414px;
+    height: 175px;
+    border: solid 2px black;
+    background-color: rgb(235, 233, 233);
+}
+.bangtabledk2{
+    position: absolute;
+    margin-left: 625px;
+    margin-top: 30px;
+    width: 351px;
+    height: 133px;
+    z-index: 2;   
+}
+.Tudongbtn{
+    margin-left: 2px;
+    margin-top: 10px;
+    width: 87px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 0.45cm;
+    background-color: rgb(153, 234, 87);
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s;
+}
+.Tudongbtn:hover{
+    color:#fff;
+    background-color:#00ff00;
+}
+.Xoaloibtn2{
+    margin-left: -251px;
+    margin-top: 87px;
+    width: 80px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 0.45cm;
+    background-color: rgb(235, 227, 11);
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s;   
+}
+.Xoaloibtn2:hover{
+    color:#fff;
+    background-color:rgb(244, 237, 37);
+}
+/*NÚT XOÁ LỖI*/
+.Xacnhan{
+    margin-left: -269px;
+    margin-top: 87px;
+    width: 95px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 0.4cm;
+    background-color: gray;
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s;  
+}
+.Xacnhan:hover{
+    color:#fff;
+    background-color:rgb(37, 244, 51);
+}
+/*----------------------------------*/
+.Caidatloc{
+    margin-left: 8px;
+    margin-top: 7px;
+    width: 187px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 0.45cm;
+    background-color: rgb(75, 106, 114);
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s;   
+    position: absolute;
+}
+.Caidatloc:hover{
+    color:#fff;
+    background-color:rgb(43, 120, 139);
+}
+.Caidatrualoc{
+    margin-left: 8px;
+    margin-top: 48px;
+    width: 187px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 0.45cm;
+    background-color: rgb(75, 106, 114);
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s; 
+    position: absolute;
+}
+.Caidatrualoc:hover{
+    color:#fff;
+    background-color:rgb(43, 120, 139);
+}
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+/* --------------------------------------------BẢNG CÀI ĐẶT THỜI GIAN CHO BỂ LỌC VÀ RỬA LỌC----------------------------------------------*/
+.boxdk3 {
+    right: -2px;
+    margin-top: 0px;
+    position: absolute;
+    width: 455px;
+    height: 175px;
+    border: solid 2px black;
+    background-color: rgb(235, 233, 233);
+}
+.boxdk4 {
+    right: 452px;
+    margin-top: 0px;
+    position: absolute;
+    width: 540px;
+    height: 175px;
+    border: solid 2px black;
+    background-color: rgb(235, 233, 233);
+}
+/*bảng thời gian*/
+.bangthoigian{
+    margin-left: -2px;
+    margin-top: -1px;
+    width: 455px;
+    height: 145px;
+    z-index: 2;   
+}
+.timesetup{
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 56px;
+    height: 20px; 
+}
+.giatrihientai{
+    margin-left: 75px;
+    margin-top: -27px;
+    width: 56px;
+    height: 20px;
+    font-size: 0.5cm;
+    text-align: center;
+    font-weight: bolder;
+}
+.nhapgiatri{
+    margin-left: 0px;
+    margin-top: -8px;
+    width: 66px;
+    height: 35px;
+    font-size: 0.5cm;
+    text-align: center;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+.state_lamp1 .tblabel{
+    margin-left: -15px;
+    margin-top: 3px;
+}
+.state_lamp2 .tblabel{
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.tblabel tr{
+    height: 40px;
+}
+.lamp_run{
+    margin-left: 123px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #fff;
+}
+.lamp_green{
+    position: absolute;
+    margin-left: 47px;
+    margin-top: -11px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #fff;
+}
+.lamp_red{
+    position: absolute;
+    margin-left: 146px;
+    margin-top: -11px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+.lamp_yellow{
+    position: absolute;
+    margin-left: 248px;
+    margin-top: -11px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+
+/*----------------------ĐÈN LỖI HỆ THỐNG-------------*/
+.lamp_run2{
+    margin-left: 159px;
+    margin-top: 94px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #fff;
+    position: absolute;
+}
+.chehinh{
+    width: 287px;
+    height: 248px;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 39px;
+    margin-top: 232px;
+}
+.active{
+    border: solid 2px black;
+    margin-top: 44px;
+    width: 330px;
+    height: 54px;
+    margin-left: -2px;
+    position: absolute;
+}
+.active .tblabel{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.active .tblabel tr{
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.active .tblabel td{
+    display: flex;
+    width: 150px;
+    justify-content: center;
+}
+.Runbtn{
+    margin-left: -46px;
+    margin-top: 9px;
+    width: 84px;
+    height: 30px;
+    background-color: rgb(159, 222, 107);
+    font-size: 0.45cm;
+    font-weight: bolder;   
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s; 
+}
+.Runbtn:hover{
+    color:#fff;
+    background-color:#00ff00;
+}
+
+.Stopbtn{
+    margin-left: -152px;
+    margin-top: 9px;
+    width: 85px;
+    height: 30px;
+    background-color: rgb(238, 81, 81);
+    font-size: 0.45cm;
+    font-weight: bolder;
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s;   
+}
+.Stopbtn:hover{
+    color:#fff;
+    background-color:#f40d0d;
+}
+.Xoaloipopup{
+    margin-left: 204px;
+    margin-top: -41px;
+    width: 85px;
+    height: 30px;
+    background-color: rgb(235, 227, 11);
+    font-size: 0.45cm;
+    font-weight: bolder; 
+    border-radius: 5px;
+    transform: color 0.5s, background 0.5s;
+    position: absolute;
+}
+.Xoaloipopup:hover{
+    color:rgb(255, 255, 255);
+    background-color:rgb(244, 237, 37);;
+}
+.click{
+    display: none;
+}
+
+
