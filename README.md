@@ -8,5 +8,6 @@
 ## MQTT & SCADA WEB-BASED
 * Sơ đồ hệ thống
 ![image](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/70a2720e-2b02-4136-99f6-87783e32d272)
-
+* thiết bị sử dụng:
+  PLC S7-1200, Raspberry PI 4, Module 4G
   
