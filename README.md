@@ -21,8 +21,10 @@ Thiết bị sử dụng: PLC S7-1200, Raspberry PI 4, Module 4G
 
 MQTT Broker: CloudMQTT làm trung gian để kết nối giữa các thiết bị người dùng và các thiết bị phần cứng
 
-
 Node-RED để phân luồng dữ liệu
+
+![image4](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/0916baf0-1452-41a5-8b3c-61d5a790acac)
+
 
 ## Xây dựng Web-based:
 ![image5](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/201646f4-936a-4637-8be8-fffa37e73b6b)
