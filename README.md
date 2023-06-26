@@ -10,7 +10,7 @@ Nguyên lý điều khiển khép kín dây chuyền bổ sung thêm các logic 
 ## Multiple Connection
 Sơ đồ hệ thống
 ![image2](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/70a2720e-2b02-4136-99f6-87783e32d272)
-Thiết bị sử dụng: PLC S7-1200, Raspberry PI 4, Module 4G
+*Thiết bị sử dụng: PLC S7-1200, Raspberry PI 4, Module 4G
 ![image3](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/7ab59e11-9c71-4468-9ba3-a126237f3730)
 * MQTT Broker: CloudMQTT làm trung gian để kết nối giữa các thiết bị người dùng và các thiết bị phần cứng
 ![image4](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/3c399dc9-e934-4c83-8a44-e9155618e625)
