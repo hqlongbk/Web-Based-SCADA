@@ -29,7 +29,9 @@ Node-RED để phân luồng dữ liệu
 
 
 ## Xây dựng Web-based:
-![image5](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/201646f4-936a-4637-8be8-fffa37e73b6b)
+
+![project](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/6b120148-e0af-4483-ae44-e25ec36eba10)
+
 
 Hệ thống điều khiển và giám sát từ xa bằng nhiều thiết bị thông minh
 
