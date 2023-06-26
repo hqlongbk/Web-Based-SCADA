@@ -36,3 +36,7 @@
 
 - Images and parameters are updated in real time.
 
+## Requirements
+- Node-RED
+- TIA PORTAL V16
+- CloudMQTT
