@@ -4,15 +4,16 @@
 * Applying MQTT to control and supervision on SCADA Web-based
 ## Cải tạo và nâng cấp
 
-Phương án cải tạo công nghệ và nguyên lý điều khiển tự động hóa bể lắng bể lọc đã xây dựng với mục tiêu giải quyết các nhược điểm công nghệ hiện trạng. Tăng cường giám sát tiến trình và tự động hóa hoàn toàn các khâu điều khiển tại bể lắng, bể lọc.
+- Phương án cải tạo công nghệ và nguyên lý điều khiển tự động hóa bể lắng bể lọc đã xây dựng với mục tiêu giải quyết các nhược điểm công nghệ hiện trạng. Tăng cường giám sát tiến trình và tự động hóa hoàn toàn các khâu điều khiển tại bể lắng, bể lọc.
 
-Nguyên lý điều khiển khép kín dây chuyền bổ sung thêm các logic liên động điều khiển giữa PLC lắng lọc và PLC hóa chất làm tăng độ chính xác, độ tin cậy vận hành của dây chuyền.
+- Nguyên lý điều khiển khép kín dây chuyền bổ sung thêm các logic liên động điều khiển giữa PLC lắng lọc và PLC hóa chất làm tăng độ chính xác, độ tin cậy vận hành của dây chuyền.
 
 ![loc](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/741d687f-86bb-4c52-93c5-50ac77291e45)
 
 
 ## Multiple Connection
-Sơ đồ hệ thống
+
+### Sơ đồ hệ thống
 
 ![sodo](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/ea8f8c4e-273a-45f1-b63a-c40a92eef3eb)
 
