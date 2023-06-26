@@ -14,7 +14,8 @@ Nguyên lý điều khiển khép kín dây chuyền bổ sung thêm các logic 
 ## Multiple Connection
 Sơ đồ hệ thống
 
-![image2](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/70a2720e-2b02-4136-99f6-87783e32d272)
+![sodo](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/ea8f8c4e-273a-45f1-b63a-c40a92eef3eb)
+
 
 Thiết bị sử dụng: PLC S7-1200, Raspberry PI 4, Module 4G
 
