@@ -17,7 +17,8 @@ Sơ đồ hệ thống
 
 Thiết bị sử dụng: PLC S7-1200, Raspberry PI 4, Module 4G
 
-![image3](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/7ab59e11-9c71-4468-9ba3-a126237f3730)
+![image3](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/4ae36428-f4e2-48c0-8dd1-ad208a266838)
+
 
 MQTT Broker: CloudMQTT làm trung gian để kết nối giữa các thiết bị người dùng và các thiết bị phần cứng
 
