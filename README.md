@@ -23,7 +23,8 @@ MQTT Broker: CloudMQTT làm trung gian để kết nối giữa các thiết b�
 
 Node-RED để phân luồng dữ liệu
 
-![image4](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/0916baf0-1452-41a5-8b3c-61d5a790acac)
+![image4](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/ab800e07-0d4e-43f4-a5aa-7ecd3b55b191)
+
 
 
 ## Xây dựng Web-based:
