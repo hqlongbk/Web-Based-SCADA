@@ -8,7 +8,8 @@ Phương án cải tạo công nghệ và nguyên lý điều khiển tự độ
 
 Nguyên lý điều khiển khép kín dây chuyền bổ sung thêm các logic liên động điều khiển giữa PLC lắng lọc và PLC hóa chất làm tăng độ chính xác, độ tin cậy vận hành của dây chuyền.
 
-![image1](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/2112c653-aac3-4abb-a703-1a9700dad07f)
+![loc](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/741d687f-86bb-4c52-93c5-50ac77291e45)
+
 
 ## Multiple Connection
 Sơ đồ hệ thống
@@ -30,7 +31,8 @@ Node-RED để phân luồng dữ liệu
 
 ## Xây dựng Web-based:
 
-![project](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/6b120148-e0af-4483-ae44-e25ec36eba10)
+![project1](https://github.com/hqlongbk/Web-Based-SCADA/assets/126086908/ed51a178-f019-4445-aef3-7a97ebaa11e0)
+
 
 
 Hệ thống điều khiển và giám sát từ xa bằng nhiều thiết bị thông minh
